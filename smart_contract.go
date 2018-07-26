@@ -1,8 +1,8 @@
-package tc
+package embedded_contract
 
 import (
-	"tc/database"
-	"tc/service"
+	"github.com/kfangw/embedded_contract/database"
+	"github.com/kfangw/embedded_contract/service"
 )
 
 type SmartContract struct {

@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"tc/common/address"
-	"tc/database"
-	"tc/operation"
+	"github.com/kfangw/embedded_contract/common/address"
+	"github.com/kfangw/embedded_contract/database"
+	"github.com/kfangw/embedded_contract/operation"
 )
 
 type (

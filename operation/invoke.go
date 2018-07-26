@@ -22,8 +22,8 @@ import (
 	"io"
 
 	"errors"
-	"tc/common/address"
-	"tc/common/serialization"
+	"github.com/kfangw/embedded_contract/common/address"
+	"github.com/kfangw/embedded_contract/common/serialization"
 )
 
 type OperationInvoke struct {

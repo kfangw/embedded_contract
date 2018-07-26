@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"tc/common/address"
+	"github.com/kfangw/embedded_contract/common/address"
 )
 
 var HelloWorldAddress = address.AddressFromString("HELLOWORLDADDRESS")

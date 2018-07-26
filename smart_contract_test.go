@@ -1,7 +1,8 @@
-package tc
+package embedded_contract
 
 import (
-	"tc/service"
+	"fmt"
+	"github.com/kfangw/embedded_contract/service"
 	"testing"
 )
 
@@ -20,6 +21,8 @@ func TestSmartContract(t *testing.T) {
 	service.Init()
 
 	es.NativeCall(service.HelloWorldAddress, "setHelloWorld", []byte{})
-	es.NativeCall(service.HelloWorldAddress, "getHelloWorld", []byte{})
+	result, _ := es.NativeCall(service.HelloWorldAddress, "getHelloWorld", []byte{})
+
+	fmt.Println(string(result.([]byte)))
 
 }
